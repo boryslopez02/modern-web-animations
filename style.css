@@ -25,6 +25,44 @@ body {
     animation-timing-function: linear;
 }
 
+#box {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+#box1 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: indigo;
+    margin-bottom: 30px;
+}
+
+#box2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    margin-bottom: 30px;
+}
+
+#box3 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: orangered;
+    margin-bottom: 30px;
+}
+
+.content-text {
+    margin-top: 100px;
+    min-height: 400px;
+}
+
+
 @keyframes move {
     0% {
         left: 0;
