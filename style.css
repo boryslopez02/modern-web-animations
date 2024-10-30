@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.box {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+        top: 0;
+        rotate: 0deg;
+        background: red;
+    } 
+    
+    50% {
+        left: 80%;
+        top: 0;
+        rotate: 0deg;
+        background: yellow;
+    }
+    
+    100% {
+        left: 80%;
+        top: 80%;
+        rotate: 360deg;
+        background: green;
+    }
+}
+
+@keyframes animate {
+    from {
+        left: 0;
+        rotate: 0deg;
+    } to {
+        left: 80%;
+        rotate: 360deg;
+    }
+}
+
+
+/* Index 2 */
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h1::after {
+    content: ' like kardo';
+    color: white;
+    background: red;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h1::before {
+    content: 'good day ';
+    color: greenyellow;
+    background: #333;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
