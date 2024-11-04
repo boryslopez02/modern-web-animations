@@ -146,3 +146,17 @@ h1::before {
     align-items: center;
     justify-content: center;
 }
+
+/* Lenis */
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border-bottom: 10px solid #111;
+    color: white;
+}
